@@ -1,3 +1,4 @@
+//Feito por Alexandre Zampieri Salles e Caio Victor Andrade 
 #include <iostream>
 using namespace std;
 
@@ -128,7 +129,7 @@ int main() {
         cout << "2 - Abrir guiche" << endl;
         cout << "3 - Realizar atendimento" << endl;
         cout << "4 - Listar senhas atendidas" << endl;
-        cout << "Opçao: ";
+        cout << "OpÃ§ao: ";
          cin >> opcao;
 
         switch(opcao) {
@@ -146,7 +147,7 @@ int main() {
                 cout << "Digite o Id para o novo guiche: ";
                 cin >> id;
                 if (buscarGuiche(listaDeGuiches, id) != NULL) { 
-                    cout << "Atençao: Ja existe um guiche com este Id!" << endl;
+                    cout << "AtenÃ§ao: Ja existe um guiche com este Id!" << endl;
                 } else {
                     adicionarGuiche(listaDeGuiches, id);
                 }
